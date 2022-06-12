@@ -25,19 +25,17 @@ body {
     z-index: 500;
 }
 
-#title {
+h1 {
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     position: fixed;
 }
-
-
 
 .game_container {
     background-color: white;
     display: flex;
-    height: 600px;
-    width: 1000px;
+    height: 40rem;
+    width: 20rem;
     border: 2px solid black;
     border-radius: 15px;
     position: relative;
@@ -47,12 +45,23 @@ body {
     justify-content: center;
 }
 
+.game_container h1 {
+    color: black;
+    margin-top: 2rem;
+}
+
+.info {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+}
+
 #rock_image {
-    height: 10rem;
+    height: 4rem;
     position: absolute;
-    top: 10rem;
+    top: 5rem;
     margin: 0 left;
-    left: 8rem;
+    left: 7.6rem;
 }
 
 #rock_image:hover,
@@ -63,11 +72,11 @@ body {
 }
 
 #paper_image {
-    height: 10rem;
+    height: 4rem;
     position: absolute;
-    top: 10rem;
-    margin: 0 left;
-    left: 26rem;
+    top: 12.8rem;
+    margin: 0 auto;
+    left: 8rem;
 }
 
 #paper_image:hover,
@@ -78,11 +87,11 @@ body {
 }
 
 #scissors_image {
-    height: 10rem;
+    height: 4rem;
     position: absolute;
-    top: 10rem;
-    margin: 0 left;
-    left: 42rem;
+    top: 21rem;
+    margin: 0 auto;
+    left: 7rem;
 }
 
 #scissors_image:hover,
@@ -95,44 +104,44 @@ body {
 #rock_text {
     height: 10rem;
     position: absolute;
-    top: 22rem;
-    margin: 0 left;
-    left: 12.5rem;
+    top: 10.2rem;
+    margin: 0 auto;
+    right: 7.7rem;
 }
 
 #paper_text {
     height: 10rem;
     position: absolute;
-    top: 22rem;
-    margin: 0 left;
-    left: 28.5rem;
+    top: 18rem;
+    margin: 0 auto;
+    right: 7.4rem;
 }
 
 #scissors_text {
     height: 10rem;
     position: absolute;
-    top: 22rem;
-    margin: 0 left;
-    left: 45rem;
+    top: 25rem;
+    left: 6.5rem;
+    margin-bottom: 5rem;
 }
 
 #player_choice {
     height: 10rem;
     position: absolute;
-    top: 27rem;
+    top: 29rem;
 }
 
 #computer_choice {
     height: 10rem;
     position: absolute;
-    top: 29rem;
+    top: 31rem;
     
 }
 
 #result {
     height: 10rem;
     position: absolute;
-    top: 31rem;
+    top: 33rem;
 }
 
 #new_game {
@@ -141,11 +150,85 @@ body {
     border-radius: 15px;
     height: 10rem;
     position: absolute;
-    top: 34rem;
+    top: 36rem;
     max-height: 2rem;
 }
 
 #new_game:hover,
 #new_game:active {
     cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+    #title {
+        font-size: 2.5rem;
+    }
+
+    .game_container {
+        height: 38rem;
+        width: 62.5rem;
+    }
+
+    #rock_image {
+        height: 10rem;
+        position: absolute;
+        top: 10rem;
+        margin: 0 left;
+        left: 8rem;
+    }
+
+    #paper_image {
+        height: 10rem;
+        position: absolute;
+        top: 10rem;
+        margin: 0 left;
+        left: 26rem;
+    }
+
+    #scissors_image {
+        height: 10rem;
+        position: absolute;
+        top: 10rem;
+        margin: 0 left;
+        left: 42rem;
+    }
+
+    #rock_text {
+        height: 10rem;
+        top: 22rem;
+        margin: 0 left;
+        left: 12.5rem;
+    }
+
+    #paper_text {
+        height: 10rem;
+        top: 22rem;
+        margin: 0 left;
+        left: 28.5rem;
+    }
+    
+    #scissors_text {
+        height: 10rem;
+        top: 20.8rem;
+        margin: 0 left;
+        left: 45rem;
+    }
+
+    #player_choice {
+        top: 27rem;
+    }
+
+    #computer_choice {
+        top: 29rem;
+        
+    }
+
+    #result {
+        top: 31rem;
+    }
+
+    #new_game {
+        top: 34rem;
+    }
+    
 }
